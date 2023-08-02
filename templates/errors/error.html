@@ -1,0 +1,25 @@
+<!-- Jinja2 Template -->
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset="utf-8">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='styles/error.css') }}">
+		<title>2J Booking System</title>
+	<head>
+	
+	<body>		
+		<header>
+			<h3>{{ error }}</h3>
+			
+		</header>
+
+		<nav>
+			<a href="/">Main Page</a>
+			<a href="/data">Data Table</a>
+			<a href="/api">API</a>
+		</nav>
+
+		<footer>Proudly made by AV3_08 for 2J 2022</footer>
+	</body>
+</html> 

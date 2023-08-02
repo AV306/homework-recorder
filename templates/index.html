@@ -1,0 +1,89 @@
+<!-- Jinja2 Template -->
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset="utf-8">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='styles/index.css') }}">
+		<title>2J Booking System</title>
+	<head>
+	
+	<body>
+		<script type="text/javascript" src="script.js"></script>
+		
+		<header>
+			<h1>2J Offense Recording System</h1>
+		</header>
+
+		<nav>
+			<a href="/">Main Page</a>
+			<a href="/data">Data Table</a>
+			<a href="/api">API</a>
+		</nav>
+		
+		<div id="inputs" class="inputs">
+			<form action="/" method="post" enctype="multipart/form-data">
+				<select name="name_input" id="name_input">
+					<option value="Addison">Addison</option>
+					<option value="Arnav">Arnav</option>
+					<option value="Brandon">Brandon</option>
+					<option value="Haowen">Haowen</option>
+					<option value="Kieran">Kieran</option>
+					<option value="Chew Yee">Chew Yee</option>
+					<option value="Datta">Datta</option>
+					<option value="Kingsley">Kingsley</option>
+					<option value="Yong Hean">Yong Hean</option>
+					<option value="Javinn">Javinn</option>
+					<option value="Mozhe">Mozhe</option>
+					<option value="Liancheng">Liancheng</option>
+					<option value="Jordan">Jordan</option>
+					<option value="Joshua">Joshua</option>
+					<option value="Marx">Marx</option>
+					<option value="Nicholas">Nicholas</option>
+					<option value="Tianyang">Tianyang</option>
+					<option value="Ding Kai">Ding Kai</option>
+					<option value="Zhi Yu">Zhi Yu</option>
+					<option value="Yu An">Yu An</option>
+					<option value="Jia Kai">Jia Kai</option>
+					<option value="Luke">Luke</option>
+					<option value="Linus">Linus</option>
+					<option value="Zhenjun">Zhenjun</option>
+					<option value="Reynald">Reynald</option>
+					<option value="Wenyuan">Wenyuan</option>
+					<option value="Cheng Ho">Cheng Ho</option>
+					<option value="Yi Kin">Yi Kin</option>
+					<option value="Theodore">Theodore</option>
+					<option value="Jason">Jason</option>
+					<option value="Xavier">Xavier</option>
+					<option value="Yihan">Yihan</option>
+					<option value="Jinghen">Jinghen</option>
+					<option value="Austin">Austin</option>
+					<option value="Yilin">Yilin</option>					
+         </select>
+
+				<select name="reason_input" id="reason_input">
+					<option value="iPad Misuse">iPad Misuse</option>
+					<option value="Unmasked">Unmasked</option>
+					<option value="Other">Other</option>
+				</select>
+
+				<input name="details_input" id="details_input" type="text" placeholder="Details..."></input>
+
+				<br>
+
+        <label for="password_input">Authentication</label>
+				<input name="password_input" id="password_input" type="password" value=""></input>
+				
+				<button id="submit" type="submit">Submit</button>
+			</form>
+
+			<br>
+
+			{% if auth %}
+			<p id="success">Success!</p>
+			{% endif %}
+		</div>
+
+		<footer>Proudly made by AV3_08 for 2J 2022</footer>
+	</body>
+</html> 
