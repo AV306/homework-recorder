@@ -5,21 +5,13 @@
 
 	<head>
 		<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='styles/error.css') }}">
-		<title>2J Booking System</title>
+		<title>Homework Recording System</title>
 	<head>
 	
 	<body>		
 		<header>
 			<h3>{{ error }}</h3>
-			
+			<img src="https://http.cat/{{ error }}" />
 		</header>
-
-		<nav>
-			<a href="/">Main Page</a>
-			<a href="/data">Data Table</a>
-			<a href="/api">API</a>
-		</nav>
-
-		<footer>Proudly made by AV3_08 for 2J 2022</footer>
 	</body>
 </html> 
