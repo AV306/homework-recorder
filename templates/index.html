@@ -8,6 +8,10 @@
 	<head>
 	
 	<body>
+		{% if submitted %}
+		<img src="/" onload="alert('SUccessfully submitted!')" />
+		<!-- This is written like an XSS injection because that's the only way I know -->
+		{% endif %}
 		<form action="/" method="post" enctype="multipart/form-data">
 			<label for="sel-subject">Subject</label>
 			<select name="subject" id="sel-subject">
